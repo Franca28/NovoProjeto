@@ -1,0 +1,74 @@
+:root {
+    --branco: #fff;
+    --roxo: #7A02BA;
+    --amarelo: #FFBF00;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: var(--branco);
+    grid-area: nav;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 400px;
+    height: 100px;
+}
+
+.item {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.roxo {
+    color: var(--roxo);
+    transition: color .3s ease;
+}
+
+
+.roxo:hover {
+    color: var(--amarelo);
+}
+
+.amarelo {
+    color: var(--amarelo);
+    background: none;
+    transition: background .3s ease;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.amarelo:hover {
+    background: var(--roxo);
+}
+
+.botao {
+    color: var(--roxo);
+    background: var(--amarelo);
+    transition: background .3s ease;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.botao:hover {
+    background: var(--roxo);
+    color: var(--amarelo);
+}

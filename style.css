@@ -1,0 +1,100 @@
+:root {
+    --branco: #fff;
+    --roxo: #7A02BA;
+    --amarelo: #FFBF00;
+    --fundo: #5c1582;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "nav nav nav" 20vh
+    "img1 main img2" 80vh / 1fr 1.5fr 1fr;
+}
+
+.barra1 {
+    grid-area: img1;
+    background-image: url(./imgs/computador.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.barra2 {
+    grid-area: img2;
+    background-image: url(./imgs/Senhor.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.conteudo {
+    grid-area: main;
+    display: flex;
+    background: var(--fundo);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: var(--branco);
+    margin-inline: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.texto1 {
+    background: #7a02ba85;
+}
+
+.texto2 {
+    background: #ffbf0085;
+}
+
+.textoMot {
+    background: var(--roxo);
+    width: 400px;
+    height: 300px;
+    font-size: 40px;
+    align-content: center;
+    text-align: center;
+    color: var(--amarelo);
+    padding: 5px;
+    border-radius: 35px;
+}
+
+.cd {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    color: var(--amarelo);
+    background: var(--roxo);
+    transition: background .3s ease;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.cd:hover {
+    background: var(--amarelo);
+    color: var(--roxo);
+}

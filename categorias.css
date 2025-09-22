@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "nav nav nav" 20vh
+    ". titulo ." 10vh
+    "tabela1 tabela2 tabela3" 70vh / 1fr 1fr 1fr;
+}
