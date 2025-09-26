@@ -2,16 +2,18 @@
     --branco: #fff;
     --roxo: #7A02BA;
     --amarelo: #FFBF00;
-    --fundo: #5c1582;
+    --fundo: #430f5f;
+    --fundoAmarelo: #ffbf0085;
+    --fundoRoxo: #7a02ba85;
 }
 
 body {
     margin: 0px;
     height: 100vh;
     display: grid;
-    grid-template: 
-    "nav nav nav" 20vh
-    "img1 main img2" 80vh / 1fr 1.5fr 1fr;
+    grid-template:
+        "nav nav nav" 20vh
+        "img1 main img2" 80vh / 1fr 1.5fr 1fr;
 }
 
 .barra1 {
@@ -47,7 +49,6 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 p {
@@ -61,11 +62,11 @@ p {
 }
 
 .texto1 {
-    background: #7a02ba85;
+    background: var(--fundoRoxo);
 }
 
 .texto2 {
-    background: #ffbf0085;
+    background: var(--fundoAmarelo);
 }
 
 .textoMot {
